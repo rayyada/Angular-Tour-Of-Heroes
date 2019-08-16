@@ -1,6 +1,6 @@
-<div *ngIf="messageService.get().length">
+<div *ngIf="get().length">
     <h2>Messages</h2>
     <button class="clear"
-            (click)="messageService.clear()" >clear</button>
-    <div *ngFor="let message of messageService.get()">{{message}}</div>
+            (click)="clear()" >clear</button>
+    <div *ngFor="let message of get()">{{message}}</div>
 </div>
